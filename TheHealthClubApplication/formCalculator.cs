@@ -98,6 +98,37 @@ namespace TheHealthClubApplication
             monthlyFeeLabel.Text = monthlyFee.ToString("C");
             totalFeeLabel.Text = totalFee.ToString("C");
         }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            // Clear textboxes
+            firstNameTextBox.Clear();
+            lastNameTextBox.Clear();
+            monthsTextBox.Clear();
+
+            // Clear labels
+            monthlyFeeLabel.Text = "";
+            totalFeeLabel.Text = "";
+
+            // Uncheck RadioButtons
+            standardRadioButton.Checked = false;
+            childRadioButton.Checked = false;
+            studentRadioButton.Checked = false;
+            seniorRadioButton.Checked = false;
+
+            // Uncheck CheckBoxes
+            yogaCheckBox.Checked = false;
+            karateCheckBox.Checked = false;
+            personalTrainerCheckBox.Checked = false;
+
+            // Move cursor to first textbox
+            firstNameTextBox.Focus();
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
     }
 

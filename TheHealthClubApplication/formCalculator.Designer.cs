@@ -42,15 +42,17 @@
             this.karateCheckBox = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.monthlyFeeLabel = new System.Windows.Forms.Label();
             this.totalFeeLabel = new System.Windows.Forms.Label();
+            this.monthlyFeeLabel = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.clearButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.firstNameTextBox = new System.Windows.Forms.TextBox();
             this.lastNameTextBox = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.MembershipTypeGoupBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -59,7 +61,7 @@
             // 
             // monthsTextBox
             // 
-            this.monthsTextBox.Location = new System.Drawing.Point(25, 107);
+            this.monthsTextBox.Location = new System.Drawing.Point(84, 129);
             this.monthsTextBox.Name = "monthsTextBox";
             this.monthsTextBox.Size = new System.Drawing.Size(217, 31);
             this.monthsTextBox.TabIndex = 0;
@@ -93,7 +95,7 @@
             this.MembershipTypeGoupBox.Controls.Add(this.studentRadioButton);
             this.MembershipTypeGoupBox.Controls.Add(this.childRadioButton);
             this.MembershipTypeGoupBox.Controls.Add(this.standardRadioButton);
-            this.MembershipTypeGoupBox.Location = new System.Drawing.Point(47, 113);
+            this.MembershipTypeGoupBox.Location = new System.Drawing.Point(73, 164);
             this.MembershipTypeGoupBox.Name = "MembershipTypeGoupBox";
             this.MembershipTypeGoupBox.Size = new System.Drawing.Size(308, 260);
             this.MembershipTypeGoupBox.TabIndex = 2;
@@ -139,16 +141,15 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 49);
+            this.label1.Location = new System.Drawing.Point(20, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(287, 25);
+            this.label1.Size = new System.Drawing.Size(302, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Enter the Number of Months:";
             // 
             // calculateButton
             // 
-            this.calculateButton.Location = new System.Drawing.Point(115, 666);
+            this.calculateButton.Location = new System.Drawing.Point(125, 719);
             this.calculateButton.Name = "calculateButton";
             this.calculateButton.Size = new System.Drawing.Size(143, 67);
             this.calculateButton.TabIndex = 6;
@@ -161,7 +162,7 @@
             this.groupBox1.Controls.Add(this.personalTrainerCheckBox);
             this.groupBox1.Controls.Add(this.karateCheckBox);
             this.groupBox1.Controls.Add(this.yogaCheckBox);
-            this.groupBox1.Location = new System.Drawing.Point(507, 113);
+            this.groupBox1.Location = new System.Drawing.Point(482, 164);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(347, 260);
             this.groupBox1.TabIndex = 3;
@@ -192,9 +193,9 @@
             // 
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.monthsTextBox);
-            this.groupBox2.Location = new System.Drawing.Point(48, 406);
+            this.groupBox2.Location = new System.Drawing.Point(41, 430);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(345, 201);
+            this.groupBox2.Size = new System.Drawing.Size(373, 213);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Membership Lenght";
@@ -205,21 +206,12 @@
             this.groupBox3.Controls.Add(this.totalFeeLabel);
             this.groupBox3.Controls.Add(this.monthlyFeeLabel);
             this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Location = new System.Drawing.Point(452, 379);
+            this.groupBox3.Location = new System.Drawing.Point(452, 430);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(402, 228);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Membership Fees";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 64);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(137, 25);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Monthly Fee:";
             // 
             // label3
             // 
@@ -231,15 +223,6 @@
             this.label3.Text = "Total:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // monthlyFeeLabel
-            // 
-            this.monthlyFeeLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.monthlyFeeLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.monthlyFeeLabel.Location = new System.Drawing.Point(169, 64);
-            this.monthlyFeeLabel.Name = "monthlyFeeLabel";
-            this.monthlyFeeLabel.Size = new System.Drawing.Size(137, 25);
-            this.monthlyFeeLabel.TabIndex = 0;
-            // 
             // totalFeeLabel
             // 
             this.totalFeeLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -249,23 +232,43 @@
             this.totalFeeLabel.Size = new System.Drawing.Size(137, 25);
             this.totalFeeLabel.TabIndex = 1;
             // 
+            // monthlyFeeLabel
+            // 
+            this.monthlyFeeLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.monthlyFeeLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.monthlyFeeLabel.Location = new System.Drawing.Point(169, 64);
+            this.monthlyFeeLabel.Name = "monthlyFeeLabel";
+            this.monthlyFeeLabel.Size = new System.Drawing.Size(137, 25);
+            this.monthlyFeeLabel.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(10, 64);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(137, 25);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Monthly Fee:";
+            // 
             // clearButton
             // 
-            this.clearButton.Location = new System.Drawing.Point(329, 666);
+            this.clearButton.Location = new System.Drawing.Point(374, 719);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(161, 67);
             this.clearButton.TabIndex = 7;
             this.clearButton.Text = "Clea&r";
             this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(650, 666);
+            this.exitButton.Location = new System.Drawing.Point(620, 719);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(149, 67);
             this.exitButton.TabIndex = 8;
             this.exitButton.Text = "E&xit";
             this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // statusStrip1
             // 
@@ -278,17 +281,35 @@
             // 
             // firstNameTextBox
             // 
-            this.firstNameTextBox.Location = new System.Drawing.Point(176, 61);
+            this.firstNameTextBox.Location = new System.Drawing.Point(207, 32);
             this.firstNameTextBox.Name = "firstNameTextBox";
             this.firstNameTextBox.Size = new System.Drawing.Size(217, 31);
             this.firstNameTextBox.TabIndex = 0;
             // 
             // lastNameTextBox
             // 
-            this.lastNameTextBox.Location = new System.Drawing.Point(492, 48);
+            this.lastNameTextBox.Location = new System.Drawing.Point(207, 83);
             this.lastNameTextBox.Name = "lastNameTextBox";
             this.lastNameTextBox.Size = new System.Drawing.Size(217, 31);
             this.lastNameTextBox.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(49, 32);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(122, 25);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "First Name:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(49, 83);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(121, 25);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Last Name:";
             // 
             // formCalculator
             // 
@@ -298,6 +319,8 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.lastNameTextBox);
             this.Controls.Add(this.firstNameTextBox);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -345,5 +368,7 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.TextBox firstNameTextBox;
         private System.Windows.Forms.TextBox lastNameTextBox;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }

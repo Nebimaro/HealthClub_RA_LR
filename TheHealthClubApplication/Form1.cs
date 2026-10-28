@@ -16,5 +16,16 @@ namespace TheHealthClubApplication
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void feeCalculatorButton_Click(object sender, EventArgs e)
+        {
+            formCalculator calculator = new formCalculator();
+            calculator.Show(); // or calculator.ShowDialog(); if you want to block the main form
+        }
     }
 }
