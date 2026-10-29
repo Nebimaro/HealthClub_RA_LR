@@ -53,10 +53,12 @@
             this.lastNameTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.statusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.MembershipTypeGoupBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // monthsTextBox
@@ -167,7 +169,7 @@
             this.groupBox1.Size = new System.Drawing.Size(347, 260);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Type of Membership";
+            this.groupBox1.Text = "Extra options";
             // 
             // personalTrainerCheckBox
             // 
@@ -273,11 +275,14 @@
             // statusStrip1
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.statusLabel});
             this.statusStrip1.Location = new System.Drawing.Point(0, 828);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(930, 22);
             this.statusStrip1.TabIndex = 8;
-            this.statusStrip1.Text = "statusStrip1";
+            this.statusStrip1.Text = "READY";
+            this.statusStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.statusStrip1_ItemClicked);
             // 
             // firstNameTextBox
             // 
@@ -285,6 +290,7 @@
             this.firstNameTextBox.Name = "firstNameTextBox";
             this.firstNameTextBox.Size = new System.Drawing.Size(217, 31);
             this.firstNameTextBox.TabIndex = 0;
+            this.firstNameTextBox.TextChanged += new System.EventHandler(this.firstNameTextBox_TextChanged);
             // 
             // lastNameTextBox
             // 
@@ -310,6 +316,11 @@
             this.label5.Size = new System.Drawing.Size(121, 25);
             this.label5.TabIndex = 0;
             this.label5.Text = "Last Name:";
+            // 
+            // statusLabel
+            // 
+            this.statusLabel.Name = "statusLabel";
+            this.statusLabel.Size = new System.Drawing.Size(0, 28);
             // 
             // formCalculator
             // 
@@ -338,6 +349,8 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -370,5 +383,6 @@
         private System.Windows.Forms.TextBox lastNameTextBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ToolStripStatusLabel statusLabel;
     }
 }
